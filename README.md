@@ -1,8 +1,9 @@
 # 94 seconds of Jeopardy (94SoJ)
 ## Authors
 * Colby Guan
+
 ## Purpose
-* 94SoJ is game that gives combines the app 94 seconds with the game Jeopardy - players have 94 seconds to answer as many question (or question as many answers for Jeopardy) given the first letter of the answer.
+* 94SoJ is game that gives combines the app 94 seconds with the game Jeopardy - players have 94 seconds to answer as many question (or question as many answers) given the first letter of the answer.
 
 ## Features
 * User is given a list of (category, price) pairs before each question and can choose which one to be their next question. This list is set in stone for the 94s duration and items eliminated by user skips/answers. Categories should be mostly unique with each other.
