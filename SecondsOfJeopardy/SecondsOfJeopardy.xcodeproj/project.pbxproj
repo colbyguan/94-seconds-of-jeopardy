@@ -1,0 +1,330 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE9022791C15580D004FBDDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9022781C15580D004FBDDE /* AppDelegate.swift */; };
+		EE90227B1C15580D004FBDDE /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90227A1C15580D004FBDDE /* LaunchViewController.swift */; };
+		EE90227E1C15580D004FBDDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE90227C1C15580D004FBDDE /* Main.storyboard */; };
+		EE9022801C15580D004FBDDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE90227F1C15580D004FBDDE /* Assets.xcassets */; };
+		EE9022831C15580D004FBDDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9022811C15580D004FBDDE /* LaunchScreen.storyboard */; };
+		EE90228D1C155AC7004FBDDE /* JserviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90228C1C155AC7004FBDDE /* JserviceModel.swift */; settings = {ASSET_TAGS = (); }; };
+		EE90228F1C155BDB004FBDDE /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90228E1C155BDB004FBDDE /* QuestionModel.swift */; settings = {ASSET_TAGS = (); }; };
+		EE9022911C1565E5004FBDDE /* QuestionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9022901C1565E5004FBDDE /* QuestionsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		EE9022941C156A8E004FBDDE /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9022931C156A8E004FBDDE /* QuestionTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EE9022751C15580D004FBDDE /* SecondsOfJeopardy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecondsOfJeopardy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE9022781C15580D004FBDDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE90227A1C15580D004FBDDE /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		EE90227D1C15580D004FBDDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE90227F1C15580D004FBDDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE9022821C15580D004FBDDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE9022841C15580D004FBDDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE90228C1C155AC7004FBDDE /* JserviceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JserviceModel.swift; sourceTree = "<group>"; };
+		EE90228E1C155BDB004FBDDE /* QuestionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		EE9022901C1565E5004FBDDE /* QuestionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsTableViewController.swift; sourceTree = "<group>"; };
+		EE9022931C156A8E004FBDDE /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE9022721C15580D004FBDDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE90226C1C15580D004FBDDE = {
+			isa = PBXGroup;
+			children = (
+				EE9022771C15580D004FBDDE /* SecondsOfJeopardy */,
+				EE9022761C15580D004FBDDE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE9022761C15580D004FBDDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE9022751C15580D004FBDDE /* SecondsOfJeopardy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE9022771C15580D004FBDDE /* SecondsOfJeopardy */ = {
+			isa = PBXGroup;
+			children = (
+				EE9022781C15580D004FBDDE /* AppDelegate.swift */,
+				EE9022921C156A78004FBDDE /* views */,
+				EE90228B1C155A7F004FBDDE /* models */,
+				EE90228A1C15595F004FBDDE /* controllers */,
+				EE90227C1C15580D004FBDDE /* Main.storyboard */,
+				EE90227F1C15580D004FBDDE /* Assets.xcassets */,
+				EE9022811C15580D004FBDDE /* LaunchScreen.storyboard */,
+				EE9022841C15580D004FBDDE /* Info.plist */,
+			);
+			path = SecondsOfJeopardy;
+			sourceTree = "<group>";
+		};
+		EE90228A1C15595F004FBDDE /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EE90227A1C15580D004FBDDE /* LaunchViewController.swift */,
+				EE9022901C1565E5004FBDDE /* QuestionsTableViewController.swift */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		EE90228B1C155A7F004FBDDE /* models */ = {
+			isa = PBXGroup;
+			children = (
+				EE90228C1C155AC7004FBDDE /* JserviceModel.swift */,
+				EE90228E1C155BDB004FBDDE /* QuestionModel.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		EE9022921C156A78004FBDDE /* views */ = {
+			isa = PBXGroup;
+			children = (
+				EE9022931C156A8E004FBDDE /* QuestionTableViewCell.swift */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE9022741C15580D004FBDDE /* SecondsOfJeopardy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE9022871C15580D004FBDDE /* Build configuration list for PBXNativeTarget "SecondsOfJeopardy" */;
+			buildPhases = (
+				EE9022711C15580D004FBDDE /* Sources */,
+				EE9022721C15580D004FBDDE /* Frameworks */,
+				EE9022731C15580D004FBDDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SecondsOfJeopardy;
+			productName = SecondsOfJeopardy;
+			productReference = EE9022751C15580D004FBDDE /* SecondsOfJeopardy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE90226D1C15580D004FBDDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = colby;
+				TargetAttributes = {
+					EE9022741C15580D004FBDDE = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = EE9022701C15580D004FBDDE /* Build configuration list for PBXProject "SecondsOfJeopardy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE90226C1C15580D004FBDDE;
+			productRefGroup = EE9022761C15580D004FBDDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE9022741C15580D004FBDDE /* SecondsOfJeopardy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE9022731C15580D004FBDDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE9022831C15580D004FBDDE /* LaunchScreen.storyboard in Resources */,
+				EE9022801C15580D004FBDDE /* Assets.xcassets in Resources */,
+				EE90227E1C15580D004FBDDE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE9022711C15580D004FBDDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE90227B1C15580D004FBDDE /* LaunchViewController.swift in Sources */,
+				EE90228D1C155AC7004FBDDE /* JserviceModel.swift in Sources */,
+				EE9022911C1565E5004FBDDE /* QuestionsTableViewController.swift in Sources */,
+				EE9022941C156A8E004FBDDE /* QuestionTableViewCell.swift in Sources */,
+				EE90228F1C155BDB004FBDDE /* QuestionModel.swift in Sources */,
+				EE9022791C15580D004FBDDE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EE90227C1C15580D004FBDDE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE90227D1C15580D004FBDDE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE9022811C15580D004FBDDE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE9022821C15580D004FBDDE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE9022851C15580D004FBDDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE9022861C15580D004FBDDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE9022881C15580D004FBDDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SecondsOfJeopardy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = colby.SecondsOfJeopardy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EE9022891C15580D004FBDDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SecondsOfJeopardy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = colby.SecondsOfJeopardy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE9022701C15580D004FBDDE /* Build configuration list for PBXProject "SecondsOfJeopardy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE9022851C15580D004FBDDE /* Debug */,
+				EE9022861C15580D004FBDDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE9022871C15580D004FBDDE /* Build configuration list for PBXNativeTarget "SecondsOfJeopardy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE9022881C15580D004FBDDE /* Debug */,
+				EE9022891C15580D004FBDDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE90226D1C15580D004FBDDE /* Project object */;
+}
