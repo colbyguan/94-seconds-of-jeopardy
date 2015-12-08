@@ -9,9 +9,10 @@
 import Foundation
 
 class Game: NSObject {
-    var score: Int!
+    var score: Int = 0
     var timer: NSTimer!
     var timeLeft: Int!
+    var paused: Bool = false
     
     override init() {
         super.init()
@@ -21,6 +22,16 @@ class Game: NSObject {
     }
     
     func timerTick() {
-        self.timeLeft! -= 1
+        if !paused {
+            self.timeLeft! -= 1
+        }
+    }
+    
+    func stopTimer() {
+        if self.timer != nil {
+            self.timer.invalidate()
+            self.timer = nil
+        }
+        
     }
 }

@@ -45,6 +45,11 @@ class QuestionsTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         lastSelected = indexPath.row
+        let cell = tableView.cellForRowAtIndexPath(indexPath) as! QuestionTableViewCell
+        cell.userInteractionEnabled = false
+        cell.selectionStyle = UITableViewCellSelectionStyle.None
+        cell.categoryLabel.enabled = false
+        cell.valueLabel.enabled = false
         performSegueWithIdentifier("goToQuestion", sender: self)
     }
     

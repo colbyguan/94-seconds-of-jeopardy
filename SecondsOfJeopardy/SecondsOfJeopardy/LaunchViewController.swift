@@ -9,6 +9,11 @@
 import UIKit
 
 class LaunchViewController: UIViewController {
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        self.navigationController?.navigationBarHidden = false
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

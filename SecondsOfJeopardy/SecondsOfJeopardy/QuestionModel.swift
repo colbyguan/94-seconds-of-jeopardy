@@ -46,6 +46,7 @@ class Question {
         }
         self.answer = rawAnswer
         
+        print("Question: \(self.clue)")
         print("Answer: \(self.answer)")
     }
     
