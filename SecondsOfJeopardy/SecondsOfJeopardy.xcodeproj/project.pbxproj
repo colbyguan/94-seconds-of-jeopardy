@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE0882D01C167A1700FBEF1A /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0882CF1C167A1700FBEF1A /* GameModel.swift */; settings = {ASSET_TAGS = (); }; };
 		EE9022791C15580D004FBDDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9022781C15580D004FBDDE /* AppDelegate.swift */; };
 		EE90227B1C15580D004FBDDE /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90227A1C15580D004FBDDE /* LaunchViewController.swift */; };
 		EE90227E1C15580D004FBDDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE90227C1C15580D004FBDDE /* Main.storyboard */; };
@@ -16,9 +17,11 @@
 		EE90228F1C155BDB004FBDDE /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90228E1C155BDB004FBDDE /* QuestionModel.swift */; settings = {ASSET_TAGS = (); }; };
 		EE9022911C1565E5004FBDDE /* QuestionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9022901C1565E5004FBDDE /* QuestionsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		EE9022941C156A8E004FBDDE /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9022931C156A8E004FBDDE /* QuestionTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		EE9022961C15779D004FBDDE /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9022951C15779D004FBDDE /* QuestionViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE0882CF1C167A1700FBEF1A /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		EE9022751C15580D004FBDDE /* SecondsOfJeopardy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecondsOfJeopardy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE9022781C15580D004FBDDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE90227A1C15580D004FBDDE /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +33,7 @@
 		EE90228E1C155BDB004FBDDE /* QuestionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
 		EE9022901C1565E5004FBDDE /* QuestionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsTableViewController.swift; sourceTree = "<group>"; };
 		EE9022931C156A8E004FBDDE /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
+		EE9022951C15779D004FBDDE /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 			children = (
 				EE90227A1C15580D004FBDDE /* LaunchViewController.swift */,
 				EE9022901C1565E5004FBDDE /* QuestionsTableViewController.swift */,
+				EE9022951C15779D004FBDDE /* QuestionViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -88,6 +93,7 @@
 			children = (
 				EE90228C1C155AC7004FBDDE /* JserviceModel.swift */,
 				EE90228E1C155BDB004FBDDE /* QuestionModel.swift */,
+				EE0882CF1C167A1700FBEF1A /* GameModel.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -172,8 +178,10 @@
 			files = (
 				EE90227B1C15580D004FBDDE /* LaunchViewController.swift in Sources */,
 				EE90228D1C155AC7004FBDDE /* JserviceModel.swift in Sources */,
+				EE9022961C15779D004FBDDE /* QuestionViewController.swift in Sources */,
 				EE9022911C1565E5004FBDDE /* QuestionsTableViewController.swift in Sources */,
 				EE9022941C156A8E004FBDDE /* QuestionTableViewCell.swift in Sources */,
+				EE0882D01C167A1700FBEF1A /* GameModel.swift in Sources */,
 				EE90228F1C155BDB004FBDDE /* QuestionModel.swift in Sources */,
 				EE9022791C15580D004FBDDE /* AppDelegate.swift in Sources */,
 			);
@@ -323,6 +331,7 @@
 				EE9022891C15580D004FBDDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

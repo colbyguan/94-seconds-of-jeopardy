@@ -10,13 +10,16 @@ import UIKit
 
 class QuestionsTableViewController: UITableViewController {
     var questions: [Question]!
+    var lastSelected: Int!
+    var game: Game!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let jservice = Jservice()
-        print("Starting load")
         jservice.loadQuestions(didLoadQuestions)
+        
+        game = Game()
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -38,6 +41,20 @@ class QuestionsTableViewController: UITableViewController {
         }
         
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        lastSelected = indexPath.row
+        performSegueWithIdentifier("goToQuestion", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "goToQuestion" {
+            let vc: QuestionViewController = segue.destinationViewController as! QuestionViewController
+            vc.question = questions[lastSelected]
+            vc.previousController = self
+            vc.game = self.game
+        }
     }
     
     func didLoadQuestions (questions: [Question]) {

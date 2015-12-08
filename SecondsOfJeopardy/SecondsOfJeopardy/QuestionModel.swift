@@ -22,9 +22,31 @@ class Question {
         } else {
             self.value = testValue as! Int
         }
-        self.category = (data.valueForKey("category") as! NSDictionary).valueForKey("title") as! String
+        
+        let rawCategory = (data.valueForKey("category") as! NSDictionary).valueForKey("title") as! String
+        self.category = rawCategory.capitalizedString
         self.clue = data.valueForKey("question") as! String
-        self.answer = data.valueForKey("answer") as! String
+        var rawAnswer = data.valueForKey("answer") as! String
+        
+        let replaceWith = ""
+        do {
+            var expr = try NSRegularExpression(pattern: "\\(.*\\)", options: .CaseInsensitive)
+            if let withoutParens = expr.stringByReplacingMatchesInString(rawAnswer, options: [], range: NSMakeRange(0, rawAnswer.characters.count), withTemplate: replaceWith) as String! {
+                rawAnswer = withoutParens
+            }
+            expr = try NSRegularExpression(pattern: "\\</?.\\>", options: .CaseInsensitive)
+            if let withoutCarats = expr.stringByReplacingMatchesInString(rawAnswer, options: [], range: NSMakeRange(0, rawAnswer.characters.count), withTemplate: replaceWith) as String! {
+                rawAnswer = withoutCarats
+            }
+            rawAnswer = rawAnswer.stringByReplacingOccurrencesOfString("\"", withString: "")
+            rawAnswer = rawAnswer.stringByReplacingOccurrencesOfString("\\", withString: "")
+            rawAnswer = rawAnswer.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+        } catch let err as NSError {
+            print("ERROR: \(err.localizedDescription)")
+        }
+        self.answer = rawAnswer
+        
+        print("Answer: \(self.answer)")
     }
     
 }
