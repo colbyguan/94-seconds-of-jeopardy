@@ -10,6 +10,9 @@ import UIKit
 
 class LaunchViewController: UIViewController {
     
+    @IBOutlet weak var newgamePadding: UIImageView!
+    @IBOutlet weak var helpPadding: UIImageView!
+    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
         self.navigationController?.navigationBarHidden = false
@@ -18,6 +21,11 @@ class LaunchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        newgamePadding.layer.masksToBounds = true
+        newgamePadding.layer.cornerRadius = 15;
+        helpPadding.layer.masksToBounds = true
+        helpPadding.layer.cornerRadius = 15;
+        
     }
 
     override func didReceiveMemoryWarning() {

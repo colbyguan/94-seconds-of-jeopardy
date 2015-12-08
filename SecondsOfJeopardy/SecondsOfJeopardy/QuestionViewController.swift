@@ -17,6 +17,8 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var hintButton: UIButton!
     @IBOutlet weak var skipButton: UIButton!
     @IBOutlet weak var jumbotron: UIImageView!
+    @IBOutlet weak var skipPadding: UIImageView!
+    @IBOutlet weak var hintPadding: UIImageView!
     
     var question: Question!
     var comparableAnswer: String!
@@ -32,6 +34,11 @@ class QuestionViewController: UIViewController {
     }
     
     override func viewDidLoad() {
+        skipPadding.layer.cornerRadius = 15
+        hintPadding.layer.cornerRadius = 15
+        skipPadding.layer.masksToBounds = true
+        hintPadding.layer.masksToBounds = true
+        
         questionLabel.text = question.clue
         lettersLabel.text = answerToLetters(question.answer)
         timerLabel.text = String(game.timeLeft)

@@ -10,7 +10,7 @@ import Foundation
 
 class Jservice {
     // retrieve 20 questions from API
-    let randomQuestionURL = NSURL(string: "http://jservice.io/api/random?count=20")!
+    let randomQuestionURL = NSURL(string: "http://jservice.io/api/random?count=30")!
     
     func loadQuestions(completion: (([Question]) -> Void)!) {
         let task = NSURLSession.sharedSession().dataTaskWithURL(randomQuestionURL) {

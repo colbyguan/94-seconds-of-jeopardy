@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		EE0882D01C167A1700FBEF1A /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0882CF1C167A1700FBEF1A /* GameModel.swift */; settings = {ASSET_TAGS = (); }; };
 		EE0882D21C169F3500FBEF1A /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0882D11C169F3500FBEF1A /* HelpViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		EE0882D71C16A1D200FBEF1A /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EE0882D61C16A1D200FBEF1A /* logo.png */; settings = {ASSET_TAGS = (); }; };
+		EE0882D91C16A46500FBEF1A /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = EE0882D81C16A46500FBEF1A /* help.png */; settings = {ASSET_TAGS = (); }; };
 		EE9022791C15580D004FBDDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9022781C15580D004FBDDE /* AppDelegate.swift */; };
 		EE90227B1C15580D004FBDDE /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90227A1C15580D004FBDDE /* LaunchViewController.swift */; };
 		EE90227E1C15580D004FBDDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE90227C1C15580D004FBDDE /* Main.storyboard */; };
@@ -24,6 +26,8 @@
 /* Begin PBXFileReference section */
 		EE0882CF1C167A1700FBEF1A /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		EE0882D11C169F3500FBEF1A /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		EE0882D61C16A1D200FBEF1A /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		EE0882D81C16A46500FBEF1A /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
 		EE9022751C15580D004FBDDE /* SecondsOfJeopardy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecondsOfJeopardy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE9022781C15580D004FBDDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE90227A1C15580D004FBDDE /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE0882DA1C16A46900FBEF1A /* img */ = {
+			isa = PBXGroup;
+			children = (
+				EE0882D61C16A1D200FBEF1A /* logo.png */,
+				EE0882D81C16A46500FBEF1A /* help.png */,
+			);
+			name = img;
+			sourceTree = "<group>";
+		};
 		EE90226C1C15580D004FBDDE = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +81,7 @@
 		EE9022771C15580D004FBDDE /* SecondsOfJeopardy */ = {
 			isa = PBXGroup;
 			children = (
+				EE0882DA1C16A46900FBEF1A /* img */,
 				EE9022781C15580D004FBDDE /* AppDelegate.swift */,
 				EE9022921C156A78004FBDDE /* views */,
 				EE90228B1C155A7F004FBDDE /* models */,
@@ -166,6 +180,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE0882D71C16A1D200FBEF1A /* logo.png in Resources */,
+				EE0882D91C16A46500FBEF1A /* help.png in Resources */,
 				EE9022831C15580D004FBDDE /* LaunchScreen.storyboard in Resources */,
 				EE9022801C15580D004FBDDE /* Assets.xcassets in Resources */,
 				EE90227E1C15580D004FBDDE /* Main.storyboard in Resources */,
