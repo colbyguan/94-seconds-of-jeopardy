@@ -1,4 +1,6 @@
 # 94 seconds of Jeopardy (94SoJ)
+| <img src="/screens/iphone1.png" alt="screen1" height="400"/> | <img src="/screens/iphone2.png" alt="screen2" height="400"/> | <img src="/screens/iphone3.png" alt="screen3" height="400"/> |
+
 ## Authors
 * Colby Guan
 
