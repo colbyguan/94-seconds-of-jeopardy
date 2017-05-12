@@ -57,7 +57,7 @@ class QuestionViewController: UIViewController {
             answerField.backgroundColor = colorWrong
         }
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(0.5 * Double(NSEC_PER_SEC))), dispatch_get_main_queue()) {
-            self.navigationController?.popToViewController(previousController, animated: true)
+            self.navigationController?.popToViewController(self.previousController, animated: true)
         }
     }
     @IBAction func skipButtonPressed(sender: AnyObject) {
